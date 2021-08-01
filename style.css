@@ -19,7 +19,7 @@ h1 {
 	font-size: 4.5vw;
 	font-weight: 300;
 	border: 2px solid white;
-	border-radius: 50px;
+	border-radius: 100vw;
 	transition: 0.2s all;
 }
 h1:hover {
