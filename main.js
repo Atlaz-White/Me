@@ -1,20 +1,17 @@
-var i = 0;
-setInterval(function() {
-	let ob1 = document.querySelector('#mod');
-	if (i == 0) {
-		i++;
-		ob1.textContent = ':D';
-	} else if (i == 1) {
-		i++;
-		ob1.textContent = 'UwU';
-	} else if (i == 2) {
-		i++;
-		ob1.textContent = ':0';
-	} else if (i == 3) {
-		i++;
-		ob1.textContent = ':3';
-	} else {
-		i = 0;
-		ob1.textContent = ';)';
-	};
-}, 4000);
+let inc = 0;
+
+const caritas = [
+  ':D', 'UwU', ':0', ':v',
+  ';)', ':3', '-.-*', ':p'
+];
+
+const el = document.querySelector( '#mod' );
+
+setInterval( function () {
+
+  el.textContent = caritas.at( inc );
+
+  if ( inc != 7 ) inc++;
+  else inc = 0;
+
+}, 4000 );
