@@ -9,7 +9,7 @@ const el = document.querySelector( '#mod' );
 
 setInterval( function () {
 
-  el.textContent = caritas.at( inc );
+  el.textContent = caritas[ inc ];
 
   if ( inc != 7 ) inc++;
   else inc = 0;
